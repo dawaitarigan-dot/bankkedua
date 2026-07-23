@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Digital</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="user-info">
+            <img src="assets/avatar.png" class="avatar">
+
+            <div>
+                <h3>Aji Irwansyah</h3>
+                <p>•••• •••• 4589</p>
+            </div>
+        </div>
+
+        <button class="notif-btn">
+            <i class="fa-regular fa-bell"></i>
+        </button>
+    </header>
+
+    <!-- SALDO -->
+    <section class="saldo-card">
+
+        <div class="watermark">S</div>
+
+        <span>Saldo Tabungan</span>
+
+        <h1 id="saldoUtama">
+            Rp 5.500.000
+        </h1>
+
+        <div class="saldo-info">
+
+            <div>
+                <small>Masuk</small>
+                <h4 id="masukHari">Rp 1.200.000</h4>
+            </div>
+
+            <div>
+                <small>Keluar</small>
+                <h4 id="keluarHari">Rp 350.000</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu">
+
+        <div class="menu-item"
+        onclick="openMasuk()">
+            <div class="icon-box">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <span>Transaksi Masuk</span>
+        </div>
+
+        <div class="menu-item"
+        onclick="openKeluar()">
+            <div class="icon-box">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+            <span>Transaksi Keluar</span>
+        </div>
+
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <img src="assets/banner.png">
+    </section>
+
+    <!-- RIWAYAT -->
+    <section class="riwayat">
+
+        <div class="title">
+            Riwayat Transaksi
+        </div>
+
+        <div id="listTransaksi">
+
+            <div class="trx-card">
+                <div class="trx-left">
+                    <div class="trx-icon masuk"></div>
+
+                    <div>
+                        <h4>Transfer Masuk</h4>
+                        <p>18 Juli 2026</p>
+                    </div>
+                </div>
+
+                <h3 class="hijau">
+                    + Rp 500.000
+                </h3>
+            </div>
+
+            <div class="trx-card">
+                <div class="trx-left">
+                    <div class="trx-icon keluar"></div>
+
+                    <div>
+                        <h4>Pembayaran</h4>
+                        <p>17 Juli 2026</p>
+                    </div>
+                </div>
+
+                <h3 class="hitam">
+                    - Rp 120.000
+                </h3>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- Bottom Nav -->
+<nav class="bottom-nav">
+
+    <a class="nav-item active"
+    href="index.html">
+        <i class="fa-solid fa-house"></i>
+        <span>Beranda</span>
+    </a>
+
+    <a class="nav-item"
+    href="profile.html">
+        <i class="fa-regular fa-user"></i>
+        <span>Saya</span>
+    </a>
+
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>
