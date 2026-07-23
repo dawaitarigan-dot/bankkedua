@@ -1,0 +1,3970 @@
+/*==========================================
+        STYLE.CSS PART 1
+        RESET + ROOT + HEADER + CARD
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#F57C00;
+    --primary-dark:#EF6C00;
+    --primary-light:#FFA726;
+
+    --white:#ffffff;
+
+    --bg:#F7F8FA;
+
+    --text:#2C2C2C;
+
+    --gray:#9E9E9E;
+
+    --gray-light:#ECECEC;
+
+    --green:#28C76F;
+
+    --black:#111111;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+/*====================================*/
+
+.app{
+
+    max-width:430px;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    padding-bottom:100px;
+
+}
+
+/*====================================
+            HEADER
+====================================*/
+
+.header{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+    );
+
+    padding:28px 22px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom-left-radius:28px;
+
+    border-bottom-right-radius:28px;
+
+    box-shadow:
+
+    0 8px 25px rgba(245,124,0,.18);
+
+}
+
+/*==========================*/
+
+.user-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+/*==========================*/
+
+.avatar{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid rgba(255,255,255,.85);
+
+    background:white;
+
+    box-shadow:
+
+    0 8px 18px rgba(0,0,0,.15);
+
+}
+
+/*==========================*/
+
+.user-info h3{
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:4px;
+
+}
+
+/*==========================*/
+
+.user-info p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:13px;
+
+    letter-spacing:1px;
+
+}
+
+/*==========================*/
+
+.notif-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    cursor:pointer;
+
+    backdrop-filter:blur(15px);
+
+    transition:.35s;
+
+    font-size:18px;
+
+}
+
+.notif-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(255,255,255,.30);
+
+}
+
+/*====================================
+        SALDO CARD
+====================================*/
+
+.saldo-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    margin:22px;
+
+    padding:26px;
+
+    border-radius:24px;
+
+    background:linear-gradient(
+    145deg,
+    #F57C00,
+    #FF9800);
+
+    color:white;
+
+    box-shadow:
+
+    0 18px 35px rgba(245,124,0,.25);
+
+}
+
+/*====================================
+      GLASS EFFECT
+====================================*/
+
+.saldo-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-80px;
+
+    left:-20px;
+
+    width:220px;
+
+    height:220px;
+
+    background:
+
+    rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    filter:blur(5px);
+
+}
+
+/*====================================*/
+
+.saldo-card span{
+
+    font-size:14px;
+
+    opacity:.95;
+
+}
+
+/*====================================*/
+
+.saldo-card h1{
+
+    margin-top:10px;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+/*====================================
+        WATERMARK
+====================================*/
+
+.watermark{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:145px;
+
+    font-weight:700;
+
+    color:rgba(255,255,255,.08);
+
+    pointer-events:none;
+
+    user-select:none;
+
+}
+
+/*====================================
+      SALDO INFO
+====================================*/
+
+.saldo-info{
+
+    margin-top:26px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+/*====================================*/
+
+.saldo-info small{
+
+    display:block;
+
+    color:rgba(255,255,255,.82);
+
+    margin-bottom:6px;
+
+    font-size:13px;
+
+}
+
+/*====================================*/
+
+.saldo-info h4{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/*====================================
+      MASUK
+====================================*/
+
+#masukHari{
+
+    color:#D4FFD7;
+
+}
+
+/*====================================
+      KELUAR
+====================================*/
+
+#keluarHari{
+
+    color:#FFF3E0;
+
+}
+
+/*====================================
+      CENTER HEADER PROFILE
+====================================*/
+
+.header.center{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+/*====================================*/
+
+.profile-avatar{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    border:4px solid white;
+
+    object-fit:cover;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.18);
+
+    margin-bottom:16px;
+
+}
+
+/*====================================*/
+
+.header.center h2{
+
+    color:white;
+
+    font-size:22px;
+
+    margin-bottom:6px;
+
+}
+
+/*====================================*/
+
+.header.center p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:14px;
+
+}
+
+/* =====================================================
+   🔥 STYLE.CSS PART 2
+   MENU • BANNER • RIWAYAT TRANSAKSI
+=====================================================*/
+
+/*==============================
+MENU UTAMA
+==============================*/
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    margin:25px 20px;
+}
+
+.menu-item{
+    background:#fff;
+    border-radius:22px;
+    padding:22px 15px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+
+    transition:.35s;
+}
+
+.menu-item:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 18px 35px rgba(0,0,0,.09);
+
+}
+
+.menu-item:active{
+
+    transform:scale(.96);
+
+}
+
+.icon-box{
+
+    width:68px;
+    height:68px;
+
+    border-radius:22px;
+
+    background:#FFF3E0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:14px;
+
+    transition:.35s;
+}
+
+.menu-item:hover .icon-box{
+
+    background:#F57C00;
+
+}
+
+.icon-box i{
+
+    font-size:28px;
+
+    color:#F57C00;
+
+    transition:.35s;
+
+}
+
+.menu-item:hover .icon-box i{
+
+    color:white;
+
+}
+
+.menu-item span{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#555;
+
+    text-align:center;
+
+    line-height:22px;
+
+}
+
+
+/*==============================
+PROMO BANNER
+==============================*/
+
+.banner{
+
+    margin:5px 20px 28px;
+
+}
+
+.banner img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:22px;
+
+    box-shadow:
+
+    0 12px 28px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.banner img:hover{
+
+    transform:scale(1.02);
+
+}
+
+
+/*==============================
+JUDUL RIWAYAT
+==============================*/
+
+.riwayat{
+
+    padding:0 20px 110px;
+
+}
+
+.title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#333;
+
+}
+
+.title::after{
+
+    content:"";
+
+    width:55px;
+
+    height:4px;
+
+    background:#F57C00;
+
+    border-radius:20px;
+
+}
+
+
+/*==============================
+LIST TRANSAKSI
+==============================*/
+
+#listTransaksi{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+/*==============================
+CARD TRANSAKSI
+==============================*/
+
+.trx-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.trx-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 18px 35px rgba(0,0,0,.09);
+
+}
+
+
+/*==============================
+ISI KIRI
+==============================*/
+
+.trx-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+/*==============================
+ICON BULAT
+==============================*/
+
+.trx-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    position:relative;
+
+}
+
+
+/*==============================
+MASUK
+==============================*/
+
+.trx-icon.masuk{
+
+    background:#E8F5E9;
+
+}
+
+.trx-icon.masuk::before{
+
+    content:"↓";
+
+    color:#2E7D32;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+/*==============================
+KELUAR
+==============================*/
+
+.trx-icon.keluar{
+
+    background:#F5F5F5;
+
+}
+
+.trx-icon.keluar::before{
+
+    content:"↑";
+
+    color:#444;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+
+/*==============================
+TEXT
+==============================*/
+
+.trx-left h4{
+
+    font-size:16px;
+
+    color:#333;
+
+    font-weight:600;
+
+    margin-bottom:4px;
+
+}
+
+.trx-left p{
+
+    font-size:13px;
+
+    color:#999;
+
+}
+
+
+/*==============================
+NOMINAL
+==============================*/
+
+.trx-card h3{
+
+    font-size:17px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+.hijau{
+
+    color:#2E7D32;
+
+}
+
+.hitam{
+
+    color:#222;
+
+}
+
+
+/*==============================
+EFEK GARIS PREMIUM
+==============================*/
+
+.trx-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:18%;
+
+    width:5px;
+
+    height:64%;
+
+    border-radius:20px;
+
+    background:#F57C00;
+
+    opacity:.18;
+
+}
+
+.trx-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/*==============================
+ANIMASI MUNCUL
+==============================*/
+
+@keyframes fadeCard{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.trx-card{
+
+    animation:fadeCard .45s ease;
+
+}
+
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:480px){
+
+.menu{
+
+grid-template-columns:1fr 1fr;
+
+gap:14px;
+
+}
+
+.icon-box{
+
+width:60px;
+
+height:60px;
+
+}
+
+.icon-box i{
+
+font-size:24px;
+
+}
+
+.menu-item{
+
+padding:18px 12px;
+
+}
+
+.menu-item span{
+
+font-size:13px;
+
+}
+
+.title{
+
+font-size:18px;
+
+}
+
+.trx-card{
+
+padding:15px;
+
+}
+
+.trx-left h4{
+
+font-size:15px;
+
+}
+
+.trx-left p{
+
+font-size:12px;
+
+}
+
+.trx-card h3{
+
+font-size:15px;
+
+}
+
+}
+
+/*==================================================
+        BANK DIGITAL
+        STYLE.CSS PART 1
+        Reset + Theme + Header + Saldo Card
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary:#F57C00;
+    --primary-dark:#EF6C00;
+    --primary-light:#FFB74D;
+
+    --white:#ffffff;
+    --bg:#F6F7FB;
+
+    --text:#2D3436;
+    --text-light:#757575;
+
+    --green:#27AE60;
+    --black:#222;
+
+    --shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    --shadow-soft:
+    0 5px 15px rgba(0,0,0,.05);
+
+    --radius:22px;
+
+    --transition:.35s;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    display:flex;
+
+    justify-content:center;
+
+    min-height:100vh;
+
+}
+
+/*==================================
+APP
+==================================*/
+
+.app{
+
+    width:100%;
+    max-width:430px;
+
+    min-height:100vh;
+
+    background:#fff;
+
+    position:relative;
+
+    overflow-x:hidden;
+
+    padding-bottom:95px;
+
+}
+
+/*==================================
+HEADER
+==================================*/
+
+.header{
+
+    background:
+    linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary-dark));
+
+    color:white;
+
+    padding:
+
+    28px
+    22px
+    85px;
+
+    border-bottom-left-radius:35px;
+
+    border-bottom-right-radius:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* efek cahaya */
+
+.header::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    right:-120px;
+    top:-120px;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.12);
+
+}
+
+.header::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:160px;
+    height:160px;
+
+    left:-70px;
+    bottom:-70px;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.07);
+
+}
+
+.user-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    z-index:2;
+
+}
+
+.user-info h3{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.user-info p{
+
+    margin-top:3px;
+
+    font-size:13px;
+
+    opacity:.9;
+
+}
+
+/*==================================
+AVATAR
+==================================*/
+
+.avatar{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid rgba(255,255,255,.35);
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.15);
+
+}
+
+/*==================================
+NOTIF BUTTON
+==================================*/
+
+.notif-btn{
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    backdrop-filter:blur(8px);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:var(--transition);
+
+    z-index:2;
+
+}
+
+.notif-btn:hover{
+
+    transform:scale(1.08);
+
+    background:
+
+    rgba(255,255,255,.22);
+
+}
+
+/*==================================
+SALDO CARD
+==================================*/
+
+.saldo-card{
+
+    position:relative;
+
+    width:calc(100% - 32px);
+
+    margin:-58px auto 24px;
+
+    padding:28px;
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FB8C00,
+    #F57C00);
+
+    color:white;
+
+    box-shadow:
+
+    0 20px 45px rgba(245,124,0,.28);
+
+}
+
+/* Glass Highlight */
+
+.saldo-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-30%;
+
+    top:-90%;
+
+    width:170%;
+
+    height:150%;
+
+    transform:rotate(-15deg);
+
+    background:
+
+    linear-gradient(
+
+    rgba(255,255,255,.25),
+
+    rgba(255,255,255,0)
+
+    );
+
+}
+
+/*==================================
+WATERMARK S
+==================================*/
+
+.watermark{
+
+    position:absolute;
+
+    right:18px;
+
+    top:8px;
+
+    font-size:160px;
+
+    font-weight:700;
+
+    color:
+
+    rgba(255,255,255,.08);
+
+    pointer-events:none;
+
+    user-select:none;
+
+}
+
+/*==================================
+TEXT SALDO
+==================================*/
+
+.saldo-card span{
+
+    display:block;
+
+    font-size:15px;
+
+    opacity:.92;
+
+    margin-bottom:10px;
+
+}
+
+.saldo-card h1{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    letter-spacing:.5px;
+
+}
+
+/*==================================
+INFO SALDO
+==================================*/
+
+.saldo-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+.saldo-info div{
+
+    flex:1;
+
+    background:
+
+    rgba(255,255,255,.12);
+
+    border-radius:18px;
+
+    padding:14px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+.saldo-info small{
+
+    display:block;
+
+    font-size:12px;
+
+    opacity:.9;
+
+    margin-bottom:6px;
+
+}
+
+.saldo-info h4{
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+/*==================================
+PROFILE PAGE HEADER
+==================================*/
+
+.header.center{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding-bottom:50px;
+
+}
+
+.profile-avatar{
+
+    width:95px;
+
+    height:95px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid rgba(255,255,255,.35);
+
+    margin-bottom:15px;
+
+    box-shadow:
+
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.header.center h2{
+
+    font-size:23px;
+
+    margin-bottom:5px;
+
+}
+
+.header.center p{
+
+    font-size:14px;
+
+    opacity:.9;
+
+}
+
+/*==================================
+ANIMATION
+==================================*/
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-5px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.saldo-card{
+
+    animation:
+
+    floatCard 5s ease-in-out infinite;
+
+}
+
+/*==================================
+HOVER
+==================================*/
+
+.saldo-card:hover{
+
+    transform:translateY(-4px);
+
+    transition:.35s;
+
+}
+
+.avatar:hover{
+
+    transform:scale(1.05);
+
+    transition:.3s;
+
+}
+
+.profile-avatar:hover{
+
+    transform:scale(1.05);
+
+    transition:.3s;
+
+}
+
+/*==================================
+SELECTION
+==================================*/
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*======================================
+=        STYLE.CSS PART 2
+=   Menu • Banner • Riwayat
+======================================*/
+
+
+/*==============================
+MENU
+==============================*/
+
+.menu{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:22px;
+
+margin-bottom:24px;
+
+}
+
+.menu-item{
+
+background:#fff;
+
+border-radius:22px;
+
+padding:22px 15px;
+
+text-align:center;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:
+
+0 5px 18px rgba(0,0,0,.05);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.menu-item:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+
+0 10px 28px rgba(0,0,0,.12);
+
+}
+
+
+/* Ripple */
+
+.menu-item::after{
+
+content:"";
+
+position:absolute;
+
+width:0;
+
+height:0;
+
+background:rgba(245,124,0,.12);
+
+border-radius:50%;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+transition:.45s;
+
+}
+
+.menu-item:hover::after{
+
+width:260px;
+
+height:260px;
+
+}
+
+
+
+.icon-box{
+
+width:62px;
+
+height:62px;
+
+margin:auto;
+
+border-radius:18px;
+
+background:#FFF5EC;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+margin-bottom:14px;
+
+transition:.35s;
+
+}
+
+.menu-item:hover .icon-box{
+
+background:#F57C00;
+
+}
+
+.icon-box i{
+
+font-size:25px;
+
+color:#F57C00;
+
+transition:.35s;
+
+}
+
+.menu-item:hover .icon-box i{
+
+color:white;
+
+transform:scale(1.15);
+
+}
+
+
+
+.menu-item span{
+
+display:block;
+
+font-size:15px;
+
+font-weight:600;
+
+color:#444;
+
+margin-top:6px;
+
+}
+
+
+
+/*==============================
+PROMO BANNER
+==============================*/
+
+.banner{
+
+margin-top:8px;
+
+margin-bottom:28px;
+
+border-radius:24px;
+
+overflow:hidden;
+
+background:#fff;
+
+box-shadow:
+
+0 5px 18px rgba(0,0,0,.05);
+
+position:relative;
+
+}
+
+.banner img{
+
+display:block;
+
+width:100%;
+
+height:auto;
+
+}
+
+.banner::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:70%;
+
+height:100%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.45),
+
+transparent
+
+);
+
+animation:bannerGlow 5s infinite;
+
+}
+
+@keyframes bannerGlow{
+
+0%{
+
+left:-120%;
+
+}
+
+100%{
+
+left:140%;
+
+}
+
+}
+
+
+
+/*==============================
+JUDUL RIWAYAT
+==============================*/
+
+.riwayat{
+
+margin-bottom:120px;
+
+}
+
+.title{
+
+font-size:18px;
+
+font-weight:700;
+
+margin-bottom:18px;
+
+color:#333;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+}
+
+
+
+/*==============================
+LIST TRANSAKSI
+==============================*/
+
+#listTransaksi{
+
+display:flex;
+
+flex-direction:column;
+
+gap:16px;
+
+}
+
+
+
+/*==============================
+CARD TRANSAKSI
+==============================*/
+
+.trx-card{
+
+background:#fff;
+
+padding:18px;
+
+border-radius:22px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+transition:.35s;
+
+box-shadow:
+
+0 4px 18px rgba(0,0,0,.05);
+
+}
+
+.trx-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 10px 26px rgba(0,0,0,.10);
+
+}
+
+
+
+/*==============================
+KIRI
+==============================*/
+
+.trx-left{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+
+/*==============================
+ICON BULAT
+==============================*/
+
+.trx-icon{
+
+width:46px;
+
+height:46px;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
+
+}
+
+.trx-icon::before{
+
+font-family:"Font Awesome 6 Free";
+
+font-weight:900;
+
+font-size:18px;
+
+}
+
+
+
+.trx-icon.masuk{
+
+background:#EAFBF1;
+
+}
+
+.trx-icon.masuk::before{
+
+content:"\f063";
+
+color:#00A651;
+
+}
+
+
+
+.trx-icon.keluar{
+
+background:#F3F3F3;
+
+}
+
+.trx-icon.keluar::before{
+
+content:"\f062";
+
+color:#222;
+
+}
+
+
+
+/*==============================
+TEXT
+==============================*/
+
+.trx-left h4{
+
+font-size:15px;
+
+font-weight:600;
+
+color:#333;
+
+margin-bottom:4px;
+
+}
+
+.trx-left p{
+
+font-size:13px;
+
+color:#999;
+
+}
+
+
+
+/*==============================
+NOMINAL
+==============================*/
+
+.trx-card h3{
+
+font-size:16px;
+
+font-weight:700;
+
+white-space:nowrap;
+
+}
+
+.hijau{
+
+color:#11A847;
+
+}
+
+.hitam{
+
+color:#111;
+
+}
+
+
+
+/*==============================
+BADGE
+==============================*/
+
+.badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:5px;
+
+padding:5px 10px;
+
+border-radius:30px;
+
+font-size:11px;
+
+font-weight:600;
+
+}
+
+.badge.masuk{
+
+background:#EAFBF1;
+
+color:#11A847;
+
+}
+
+.badge.keluar{
+
+background:#F3F3F3;
+
+color:#222;
+
+}
+
+
+
+/*==============================
+EMPTY
+==============================*/
+
+.empty{
+
+background:white;
+
+padding:40px 20px;
+
+border-radius:22px;
+
+text-align:center;
+
+box-shadow:
+
+0 5px 18px rgba(0,0,0,.05);
+
+}
+
+.empty i{
+
+font-size:55px;
+
+color:#F57C00;
+
+margin-bottom:18px;
+
+opacity:.8;
+
+}
+
+.empty h3{
+
+color:#444;
+
+margin-bottom:8px;
+
+}
+
+.empty p{
+
+color:#999;
+
+font-size:14px;
+
+}
+
+
+
+/*==============================
+SCROLL
+==============================*/
+
+::-webkit-scrollbar{
+
+width:7px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#F57C00;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#F5F5F5;
+
+}
+
+
+
+/*==============================
+ANIMASI
+==============================*/
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.menu-item{
+
+animation:fadeUp .6s ease;
+
+}
+
+.banner{
+
+animation:fadeUp .8s ease;
+
+}
+
+.trx-card{
+
+animation:fadeUp .9s ease;
+
+}
+
+/* =====================================
+   STYLE.CSS PART 3A
+   PROFILE PAGE
+   ===================================== */
+
+
+/* PROFILE HEADER */
+
+.header.center{
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    padding:35px 20px 45px;
+
+}
+
+
+/* PROFILE AVATAR */
+
+.profile-avatar{
+
+    width:95px;
+    height:95px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,0.7);
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.15);
+
+    margin-bottom:15px;
+
+    animation: avatarPop .6s ease;
+
+}
+
+
+@keyframes avatarPop{
+
+    from{
+
+        transform:scale(.7);
+        opacity:0;
+
+    }
+
+
+    to{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
+
+
+
+
+/* PROFILE NAME */
+
+.header.center h2{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+
+}
+
+
+
+.header.center p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* =====================================
+   PROFILE MENU
+   ===================================== */
+
+
+.profile-menu{
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+
+/* MENU CARD */
+
+.profile-item{
+
+    width:100%;
+
+    height:70px;
+
+    background:white;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 20px;
+
+    text-decoration:none;
+
+    color:#333;
+
+
+    box-shadow:
+
+    0 8px 25px rgba(0,0,0,.06);
+
+
+    transition:.3s ease;
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+
+/* EFFECT HIGHLIGHT */
+
+.profile-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:100%;
+
+    left:0;
+
+    top:0;
+
+    background:
+    linear-gradient(
+    90deg,
+    rgba(245,124,0,.15),
+    transparent
+    );
+
+
+    transition:.4s;
+
+}
+
+
+
+.profile-item:hover::before{
+
+    width:100%;
+
+}
+
+
+
+.profile-item:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 12px 30px rgba(0,0,0,.12);
+
+}
+
+
+
+
+/* LEFT ICON */
+
+.profile-item i:first-child{
+
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:14px;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    font-size:18px;
+
+
+    color:#999;
+
+
+    background:#f5f5f5;
+
+
+    margin-right:15px;
+
+
+    transition:.3s;
+
+}
+
+
+
+
+.profile-item:hover i:first-child{
+
+
+    background:#FFF1E5;
+
+    color:#F57C00;
+
+
+}
+
+
+
+
+/* TEXT */
+
+.profile-item span{
+
+
+    flex:1;
+
+
+    font-size:15px;
+
+
+    font-weight:500;
+
+
+    color:#333;
+
+
+}
+
+
+
+/* RIGHT ARROW */
+
+.profile-item i:last-child{
+
+
+    font-size:14px;
+
+
+    color:#aaa;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+
+.profile-item:hover i:last-child{
+
+
+    color:#F57C00;
+
+    transform:translateX(5px);
+
+
+}
+
+
+
+/* =====================================
+   LOGOUT BUTTON
+   ===================================== */
+
+
+.logout-btn{
+
+
+    margin:
+
+    20px;
+
+
+    width:
+
+    calc(100% - 40px);
+
+
+    height:58px;
+
+
+    border-radius:20px;
+
+
+    border:none;
+
+
+    background:white;
+
+
+    color:#F57C00;
+
+
+    font-size:16px;
+
+
+    font-weight:600;
+
+
+    cursor:pointer;
+
+
+    box-shadow:
+
+
+    0 8px 25px rgba(0,0,0,.08);
+
+
+    transition:.3s ease;
+
+
+    position:relative;
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+.logout-btn:hover{
+
+
+    transform:translateY(-3px);
+
+
+    box-shadow:
+
+
+    0 15px 35px rgba(245,124,0,.20);
+
+
+}
+
+
+
+/* CLICK EFFECT */
+
+
+.logout-btn:active{
+
+
+    transform:scale(.96);
+
+
+}
+
+
+
+
+/* LOGOUT RIPPLE */
+
+
+.logout-btn::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:0;
+
+
+    height:0;
+
+
+    background:
+
+    rgba(245,124,0,.15);
+
+
+    border-radius:50%;
+
+
+    top:50%;
+
+    left:50%;
+
+
+    transform:
+
+    translate(-50%,-50%);
+
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.logout-btn:active::after{
+
+
+    width:300px;
+
+    height:300px;
+
+
+}
+
+
+
+
+/* =====================================
+   PROFILE PAGE MOBILE OPTIMIZATION
+   ===================================== */
+
+
+@media(max-width:480px){
+
+
+.profile-avatar{
+
+
+    width:85px;
+
+    height:85px;
+
+
+}
+
+
+
+.header.center{
+
+
+    padding-top:25px;
+
+    padding-bottom:35px;
+
+
+}
+
+
+
+.profile-menu{
+
+
+    padding:15px;
+
+
+    gap:12px;
+
+}
+
+
+
+.profile-item{
+
+
+    height:65px;
+
+    border-radius:18px;
+
+    padding:0 15px;
+
+
+}
+
+
+
+.profile-item span{
+
+
+    font-size:14px;
+
+}
+
+
+
+.logout-btn{
+
+
+    height:55px;
+
+    margin:
+
+    15px;
+
+
+    width:
+
+    calc(100% - 30px);
+
+
+}
+
+
+
+}
+
+/* =====================================================
+   STYLE.CSS PART 3B
+   BOTTOM NAVIGATION PREMIUM
+   ACTIVE EFFECT + RIPPLE + BUTTON ANIMATION
+===================================================== */
+
+
+/* ===============================
+   BOTTOM NAVIGATION
+================================ */
+
+.bottom-nav{
+
+    position:fixed;
+
+    bottom:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100%;
+    max-width:480px;
+
+    height:75px;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    border-radius:24px 24px 0 0;
+
+    box-shadow:
+    0 -5px 25px rgba(0,0,0,0.08);
+
+    z-index:999;
+
+    padding:10px 20px;
+
+}
+
+
+/* ===============================
+   NAV ITEM
+================================ */
+
+.nav-item{
+
+    position:relative;
+
+    width:90px;
+    height:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:5px;
+
+    text-decoration:none;
+
+    color:#999;
+
+    font-size:12px;
+
+    font-weight:500;
+
+    transition:.35s ease;
+
+    overflow:hidden;
+
+}
+
+
+
+/* ICON */
+
+.nav-item i{
+
+    font-size:22px;
+
+    transition:.35s ease;
+
+}
+
+
+
+/* TEXT */
+
+.nav-item span{
+
+    transition:.35s ease;
+
+}
+
+
+
+
+
+/* ===============================
+   ACTIVE NAV
+================================ */
+
+
+.nav-item.active{
+
+    color:#F57C00;
+
+}
+
+
+
+.nav-item.active i{
+
+    transform:
+    translateY(-5px)
+    scale(1.15);
+
+}
+
+
+
+.nav-item.active span{
+
+    font-weight:600;
+
+}
+
+
+
+
+/* ACTIVE ORANGE DOT */
+
+.nav-item.active::before{
+
+
+    content:"";
+
+    position:absolute;
+
+    top:-8px;
+
+    width:35px;
+
+    height:5px;
+
+
+    background:#F57C00;
+
+
+    border-radius:20px;
+
+
+    box-shadow:
+    0 4px 12px rgba(245,124,0,.45);
+
+
+    animation:
+    navGlow .8s ease;
+
+}
+
+
+
+
+@keyframes navGlow{
+
+
+    from{
+
+        width:0;
+        opacity:0;
+
+    }
+
+
+    to{
+
+        width:35px;
+        opacity:1;
+
+    }
+
+
+}
+
+
+
+
+
+/* ===============================
+   HOVER EFFECT
+================================ */
+
+
+.nav-item:hover{
+
+    color:#F57C00;
+
+    transform:
+    translateY(-3px);
+
+}
+
+
+
+.nav-item:hover i{
+
+    transform:
+    scale(1.15);
+
+}
+
+
+
+
+
+/* ===============================
+   RIPPLE EFFECT
+================================ */
+
+
+.nav-item::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:10px;
+
+    height:10px;
+
+
+    background:
+    rgba(245,124,0,.25);
+
+
+
+    border-radius:50%;
+
+
+    transform:
+    scale(0);
+
+
+    opacity:0;
+
+
+}
+
+
+
+
+
+.nav-item:active::after{
+
+
+    animation:ripple .5s linear;
+
+
+}
+
+
+
+@keyframes ripple{
+
+
+    0%{
+
+        transform:
+        scale(0);
+
+        opacity:.7;
+
+    }
+
+
+
+    100%{
+
+        transform:
+        scale(12);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+
+/* ===============================
+   FLOATING EFFECT ICON
+================================ */
+
+
+.nav-item.active i{
+
+
+    animation:
+    navFloat 2s infinite ease-in-out;
+
+
+}
+
+
+
+@keyframes navFloat{
+
+
+    0%,
+    100%{
+
+        transform:
+        translateY(-3px);
+
+    }
+
+
+
+    50%{
+
+        transform:
+        translateY(-7px);
+
+    }
+
+
+}
+
+
+
+
+
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+
+
+@media(max-width:480px){
+
+
+.bottom-nav{
+
+
+    height:70px;
+
+    border-radius:
+    22px 22px 0 0;
+
+
+    padding:
+    8px 12px;
+
+
+}
+
+
+
+.nav-item{
+
+
+    width:75px;
+
+    height:55px;
+
+
+}
+
+
+
+.nav-item i{
+
+
+    font-size:20px;
+
+
+}
+
+
+
+.nav-item span{
+
+
+    font-size:11px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   SMALL PHONE
+================================ */
+
+
+@media(max-width:360px){
+
+
+.bottom-nav{
+
+
+    height:65px;
+
+
+}
+
+
+
+.nav-item{
+
+
+    width:65px;
+
+
+}
+
+
+
+.nav-item i{
+
+
+    font-size:18px;
+
+
+}
+
+
+
+.nav-item span{
+
+
+    font-size:10px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+/* ===============================
+   PAGE BOTTOM SPACE
+   AGAR CONTENT TIDAK TERTUTUP
+================================ */
+
+
+.app{
+
+
+    padding-bottom:90px;
+
+
+}
+
+
+
+
+
+/* ===============================
+   SMOOTH PAGE TRANSITION
+================================ */
+
+
+body{
+
+
+    animation:
+    pageShow .45s ease;
+
+
+}
+
+
+
+@keyframes pageShow{
+
+
+from{
+
+
+    opacity:0;
+
+    transform:
+    translateY(10px);
+
+
+}
+
+
+
+to{
+
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+
+}
+
+
+}
+
+
+
+
+
+/* ===============================
+   BUTTON PRESS EFFECT
+================================ */
+
+
+button,
+.menu-item,
+.profile-item{
+
+
+    cursor:pointer;
+
+    -webkit-tap-highlight-color:
+    transparent;
+
+
+}
+
+
+
+
+button:active,
+.menu-item:active,
+.profile-item:active{
+
+
+    transform:
+    scale(.96);
+
+
+}
+
+
+
+
+/* ===============================
+   PREMIUM SHADOW CLASS
+================================ */
+
+
+.soft-shadow{
+
+
+box-shadow:
+
+0 10px 30px
+rgba(0,0,0,.08);
+
+
+}
+
+/* ==========================================
+   🔥 STYLE.CSS PART 3C
+   RESPONSIVE + PREMIUM ANIMATION + FINISHING
+========================================== */
+
+
+/* ===============================
+   GLOBAL SMOOTH ANIMATION
+================================ */
+
+*{
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+a,
+button,
+.menu-item,
+.profile-item,
+.nav-item{
+    transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    background .25s ease,
+    color .25s ease;
+}
+
+
+
+/* ===============================
+   BUTTON PRESS EFFECT
+================================ */
+
+button:active,
+.menu-item:active,
+.profile-item:active,
+.nav-item:active{
+
+    transform:scale(.95);
+
+}
+
+
+
+/* ===============================
+   RIPPLE EFFECT
+================================ */
+
+
+.ripple{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.ripple::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+    height:0;
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%);
+
+    opacity:0;
+
+    transition:
+    width .5s ease,
+    height .5s ease,
+    opacity .5s ease;
+
+}
+
+
+.ripple:active::after{
+
+    width:250px;
+    height:250px;
+
+    opacity:1;
+
+}
+
+
+
+/* ===============================
+   PROFILE PAGE ANIMATION
+================================ */
+
+
+.profile-avatar{
+
+    animation:
+    avatarPop .6s ease;
+
+}
+
+
+@keyframes avatarPop{
+
+    0%{
+
+        transform:scale(.5);
+
+        opacity:0;
+
+    }
+
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+
+
+.profile-menu{
+
+    animation:
+    slideUp .6s ease;
+
+}
+
+
+.profile-item{
+
+    animation:
+    fadeLeft .5s ease backwards;
+
+}
+
+
+.profile-item:nth-child(1){
+
+    animation-delay:.1s;
+
+}
+
+
+.profile-item:nth-child(2){
+
+    animation-delay:.2s;
+
+}
+
+
+.profile-item:nth-child(3){
+
+    animation-delay:.3s;
+
+}
+
+
+
+
+@keyframes fadeLeft{
+
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateX(-30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateX(0);
+
+    }
+
+}
+
+
+
+
+/* ===============================
+   LOGOUT PREMIUM EFFECT
+================================ */
+
+
+.logout-btn{
+
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.logout-btn:hover{
+
+
+    transform:
+    translateY(-3px);
+
+
+    box-shadow:
+    0 10px 25px rgba(245,124,0,.25);
+
+
+}
+
+
+
+.logout-btn:active{
+
+
+    transform:
+    scale(.96);
+
+}
+
+
+
+
+/* ===============================
+   PAGE TRANSITION
+================================ */
+
+
+.app{
+
+
+    animation:
+    pageFade .45s ease;
+
+
+}
+
+
+
+@keyframes pageFade{
+
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(15px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+
+}
+
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+
+
+@media(max-width:768px){
+
+
+    body{
+
+        padding-bottom:80px;
+
+    }
+
+
+    .app{
+
+        width:100%;
+
+        max-width:430px;
+
+        margin:auto;
+
+    }
+
+
+
+    .header{
+
+        padding:
+        22px 18px;
+
+    }
+
+
+
+    .user-info h3{
+
+        font-size:16px;
+
+    }
+
+
+
+    .saldo-card{
+
+        margin:
+        15px;
+
+        padding:
+        22px;
+
+        border-radius:
+        22px;
+
+    }
+
+
+
+    .saldo-card h1{
+
+        font-size:28px;
+
+    }
+
+
+
+    .saldo-info{
+
+        gap:15px;
+
+    }
+
+
+
+    .menu{
+
+        padding:
+        10px 15px;
+
+    }
+
+
+
+    .menu-item{
+
+
+        height:110px;
+
+    }
+
+
+
+    .banner{
+
+        margin:
+        15px;
+
+    }
+
+
+
+    .trx-card{
+
+
+        margin:
+        12px 15px;
+
+        padding:
+        15px;
+
+    }
+
+
+
+    .trx-card h3{
+
+
+        font-size:14px;
+
+    }
+
+
+
+
+    .bottom-nav{
+
+
+        height:70px;
+
+
+    }
+
+
+
+    .nav-item span{
+
+
+        font-size:11px;
+
+
+    }
+
+
+}
+
+
+
+
+/* ===============================
+   SMALL PHONE
+================================ */
+
+
+@media(max-width:380px){
+
+
+
+    .saldo-card h1{
+
+
+        font-size:24px;
+
+
+    }
+
+
+
+    .saldo-info h4{
+
+
+        font-size:13px;
+
+
+        overflow:hidden;
+
+        text-overflow:ellipsis;
+
+        white-space:nowrap;
+
+
+    }
+
+
+
+
+    .menu-item{
+
+
+        height:95px;
+
+
+    }
+
+
+
+    .menu-item span{
+
+
+        font-size:12px;
+
+
+    }
+
+
+
+
+}
+
+
+
+/* ===============================
+   DESKTOP VIEW
+================================ */
+
+
+@media(min-width:900px){
+
+
+body{
+
+    background:#f4f4f4;
+
+}
+
+
+
+.app{
+
+    max-width:430px;
+
+    margin:
+    30px auto;
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.08);
+
+}
+
+
+
+.bottom-nav{
+
+
+    max-width:430px;
+
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+}
+
+
+}
+
+
+
+/* ===============================
+   IMAGE OPTIMIZE
+================================ */
+
+
+img{
+
+    user-select:none;
+
+    pointer-events:none;
+
+}
+
+
+
+/* ===============================
+   TEXT CLEAN
+================================ */
+
+
+h1,h2,h3,h4,p,span{
+
+    letter-spacing:.1px;
+
+}
+
+
+
+
+/* ===============================
+   SCROLLBAR CLEAN
+================================ */
+
+
+::-webkit-scrollbar{
+
+    width:5px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    border-radius:10px;
+
+    background:
+    rgba(245,124,0,.4);
+
+}
+
+
+
+/* ===============================
+   LOADING SHIMMER
+================================ */
+
+
+.loading{
+
+
+background:
+linear-gradient(
+90deg,
+#eee,
+#fafafa,
+#eee
+);
+
+
+background-size:
+200% 100%;
+
+
+animation:
+shimmer 1.5s infinite;
+
+
+}
+
+
+
+@keyframes shimmer{
+
+
+0%{
+
+background-position:
+-200% 0;
+
+}
+
+
+100%{
+
+background-position:
+200% 0;
+
+}
+
+
+}
+
+
+
+/* ===============================
+   PREMIUM FINISHING
+================================ */
+
+
+.card-hover:hover{
+
+
+transform:
+translateY(-5px);
+
+
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.08);
+
+
+
+}
+
+
+
+.glow-orange{
+
+
+animation:
+orangeGlow 2s infinite;
+
+
+}
+
+
+
+@keyframes orangeGlow{
+
+
+0%,100%{
+
+
+box-shadow:
+0 0 0 rgba(245,124,0,0);
+
+
+}
+
+
+50%{
+
+
+box-shadow:
+0 0 25px rgba(245,124,0,.35);
+
+
+}
+
+
+}
+
+
+
+/* END STYLE.CSS PART 3C */
+
+.toast{
+
+position:fixed;
+
+bottom:90px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+background:#333;
+
+color:white;
+
+padding:12px 22px;
+
+border-radius:20px;
+
+font-size:14px;
+
+z-index:9999;
+
+animation:
+fadeUp .3s ease;
+
+}
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:
+translate(-50%,20px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:
+translate(-50%,0);
+
+}
+
+}
+
+
